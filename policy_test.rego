@@ -11,3 +11,10 @@ test_deny_invalid_role if {
 test_deny_missing_role if {
   not allow with input as {"user": {}}
 }
+test_deny_delete_action if {
+   not allow with input as {
+   "user": {"role": "st-access-role"}
+   "action": "s3:DeleteObject",
+   "resource": "arn:aws:s3:::my-bucket/*"
+   }
+}

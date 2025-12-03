@@ -1,0 +1,10 @@
+{
+    "bucket": {
+      "name": "my-test-bucket",
+      "public": true,
+      "encryption": {
+        "enabled": false
+      }
+    }
+  }
+  
